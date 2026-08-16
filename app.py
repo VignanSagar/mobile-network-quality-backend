@@ -10,10 +10,10 @@ app = FastAPI(
     version="1.0"
 )
 
-# Load trained ML files
-model = joblib.load("../ml_model/logistic_regression_model.pkl")
-scaler = joblib.load("../ml_model/scaler.pkl")
-feature_columns = joblib.load("../ml_model/feature_columns.pkl")
+# Load trained ML files (Updated paths for Cloud Deployment)
+model = joblib.load("logistic_regression_model.pkl")
+scaler = joblib.load("scaler.pkl")
+feature_columns = joblib.load("feature_columns.pkl")
 
 
 # Input data received from Android app
